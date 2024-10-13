@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body style="background-color: rgb(136, 160, 152);">
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="midia/meu-video.mp4" width="400" controls autoplay></video> <!--obs:colocar vários formatos de video pois nem todos os navegadores aceitam todo tipo de vídeo-->
+    <video controls loop width="400" poster="imagens/Fruta_Limao_PNG_Transparente_Sem_Fundo.png"> <!--a tag "poster" é para colocar uma 'tumbnail' na capa do vídeo--></video>
+    <source src="midia/meu-video.m4v" type="video/m4v"> 
+        <source src="midia/meu-video.mp4" type="video/mp4"><!--o síte reproduz os viddeos que estão na ordem, ou seja m4v > mp4 > webm-->
+        <source src="midia/meu-video.webm" type="video/webm">
+        <p>Seu navegador não tem caompatibilidade com reprodução de vídeos</p> <!--obs: texto para caso a reprodução de vídeo falhe-->
+    </video>
+    <h1>Inserindo vídeo do YouTube</h1>
+    <iframe width="400" height="225" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=JJ3k6vzMTJVbOnA6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--Para inserir vídeos do youtube basta seguir os seguintes passos: escolher um vídeo, clicar em share(compartilhar) e selecionar a opção EMBED -->
+</body>
+</html>

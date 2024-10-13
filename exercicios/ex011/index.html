@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinânica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--explicação: o código usado nessa linha está dizendo que se a imagem dentro da tag "picture" for menor que 1050px, será carregada uma outra imagem para que adapte ao navegador (caso a pessoa esteja em um celular, tablet etc, no caso será carregada um tamanho diferente para cada caso) ou caso a pessoa diminua minimize o tamanho do navegador, assim a imagem não ira ficar grande o tempo todo-->
+        <img src="imagens/foto-g (1).png" alt="imagem flexivel">
+    </picture>
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/Wood Door Close and Rattle.mp3" autoplay controls loop></audio> <!--o "autoplay" usado é para que o audio seja tocado automaticamente, e o "controls" foi usado para criar uma barra de musica, e "loop" como o próprio nome sugere foin usado para que quando o audio chegue ao final ele recomeçe-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.mp3" type="audio/ogg">
+        <source src="midia/guanacast-33.mp3" type="audio//wav"> <!--obs: tentar não usar formato "wav" pois é muito pesado para o site-->
+        <p><a href="midia/guanacast-33.mp3">Infelizmente seu navegador não consegue reproduzir áudio.</a></p>
+    </audio>
+</body>
+</html>

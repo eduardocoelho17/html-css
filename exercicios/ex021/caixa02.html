@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: rgb(196, 196, 196);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(146, 142, 142);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgb(0, 0, 0, 0.315);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: rgb(216, 216, 216);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow:  4px 4px 9px 0px rgb(0, 0, 0.384);  /*é possivel usar somente 2 valores por exemplo "border-radius: 10px 25px;" que irá aplicar o efeito em cima e em baixo, como também é possivel usar apenas 1 valor que irá ser aplicado a todos os 4 cantos */
+        }
+
+        article {
+            background-color: rgb(118, 121, 122);
+        }
+
+        article > aside {
+            background-color: rgb(180, 175, 175);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        #bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>  <!--cabeçalho-->
+        <h1>Meu site</h1>
+        <nav> <!--menu-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            
+        </nav>
+    </header>
+    <main> <!--conteúdo principal-->
+        <section id="assuntos"> <!--seções-->
+            <p>Esportes Política e Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit iste, at quam voluptate neque aperiam ipsam a odit saepe porro perspiciatis ullam voluptatem, libero dicta deserunt, expedita dolor asperiores quis!</p>
+                <aside>
+                    <p>Artigo escrito por mim</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por mim</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

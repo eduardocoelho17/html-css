@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+
+/* BOX LEVEL */
+
+        .exemplo1 {
+            background-color: rgb(92, 113, 173);
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px; /* largura da borda */
+            border-style: solid;
+            border-color: darkolivegreen;
+            
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+                                            /* caso queira centralizar utilize "margin:auto;" */
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 10px;
+
+            outline-width: 5px;
+            outline-style: dashed;      /*outline fica entre a margem (margin) e a borda (border) porém dentro da margem. obs: alterar o tamanho da outline não ira alterar o tamanho da margem por mais que pareça estar acontecendo tal coisa*/
+            outline-color: salmon;
+
+        
+        }
+
+/* INLINE LEVEL */
+
+        a {
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(125, 155, 236);
+
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+
+            color: rgb(255, 255, 255);
+        }
+
+        .exemplo2 {
+              /* serve para simplificar as tags acima ou seja "resumir" tudo em uma linha */
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            
+            border-width: 20px;
+            border-style: solid;
+            border-color: #14488C;
+
+            padding: 10px;
+
+            color: whitesmoke;
+
+        }
+
+        .exemplo3 {
+            border: 10px solid #143C8C;
+
+            padding-block: 10px; /* Padding é o espaço entre a caixa do texto e a borda (border) */
+        
+            width: 300px;
+            height: 200px;
+
+            margin: 20px auto 20px auto;
+
+
+            text-align: center;
+
+            color: whitesmoke;
+
+        }
+
+        body {
+            background-image: linear-gradient(#14488C, #3698BF);
+
+            background-attachment: fixed; 
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <h1 class="exemplo1">Exemplo de caixa box-level</h1>
+
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+
+    <h1 class="exemplo2">Segundo Exemplo</h1>
+
+    <h1 class="exemplo3">Terceiro exemplo</h1>
+    
+</body>
+</html>

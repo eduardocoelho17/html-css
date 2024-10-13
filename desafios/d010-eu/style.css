@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    text-align: center;
+    
+    background-color: #84E1AD;
+    
+}
+
+header {
+    text-align: center;
+    background-image: linear-gradient(#40ec8d, #113d25);
+    padding: 5px;
+    color: white;
+    font-size: 10px;
+    font-family: oswald;
+    margin: -7.80px;
+    
+}
+
+nav{
+color: white;
+text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 11.5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    color: #217446;
+    font-family: Orbitron;
+}
+
+main {
+    margin: 0px 530px;
+    background-color: rgb(255, 255, 255);
+    padding: 13px
+}
+
+header > p {
+    border: -10px;
+}
+
+.t1 {
+ text-align: left;
+}
+
+.t2 {
+    text-align: left;
+ background-image: linear-gradient(to right, rgba(182, 216, 182, 0.89), rgba(255, 255, 255, 0.89));
+}
+
+.t3 {
+    text-align: left;
+ background-image: linear-gradient(to right, rgba(182, 216, 182, 0.89), rgba(255, 255, 255, 0.89));
+}
+

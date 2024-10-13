@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * { /*Configurações globais das CSS */
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(to top, #FDDC73, #FF7222, #FD1D80, #B027B5, #5861EA); /*obs: tamém tem como colocar o contrário de "to top" que seria "to bottom". também é possível usar graus (90deg). Também é possível usar gradiente rádial colocando "circle" no lugar de "to top". */
+            background-attachment: fixed;
+
+            h1 {
+                color: white;
+            }
+        } 
+    </style>
+    <!--obs: caso vá colocar o gradiente de cima para baixo e aconteca um certo erro que seria como se fosse varios retângulos na tela com gradientes é necessário que use a configuração global do css para alterar o tamnho como no exemplo na linha 8, que e usar " " * " -->
+    
+</head>
+<body>
+    <h1>Testando Gradiente(Dêgradê)</h1>
+</body>
+</html>
